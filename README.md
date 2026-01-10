@@ -16,17 +16,7 @@ This Task Manager CLI application provides the following core functionalities:
 - **Incomplete Tasks Storage** - Persistent storage for pending tasks
 - **Completed Tasks Storage** - Persistent storage for finished tasks
 - **File Integrity Checks** - Validates task files on startup
-
-### Utility Functions
-- **Input Validation** - Ensures correct data types for all inputs:
-  - `get_integer()` - Forces integer input
-  - `get_string()` - Handles string input
-  - `get_float()` - Forces float input
-  - `get_boolean()` - Forces boolean input
-- **Task Search** - Find tasks in lists by content
-- **Task Indexing** - Locate task positions in lists
-- **List Display** - Formatted task listing with headings
-
+- 
 ## 🚀 How to Use
 
 ### Running the Application
@@ -46,38 +36,8 @@ The application operates using a command-line interface with the following comma
 - **Exit**: Close the application (tasks are automatically saved)
 
 ### Data Storage
-- Incomplete tasks are stored in `incomplete_tasks.json`
-- Completed tasks are stored in `completed_tasks.json`
-- Files are created automatically on first run
-- All changes are saved automatically when you exit
-
-## 📁 Project Structure
-
-```
-task_manager.py          # Main application file
-incomplete_tasks.json    # Storage for pending tasks
-completed_tasks.json     # Storage for finished tasks
-README.md               # This documentation file
-```
-
-## 🔧 Technical Details
-
-### Core Data Structures
-- **Incomplete Tasks List** - Stores all pending tasks
-- **Completed Tasks List** - Stores all finished tasks
-
-### Function Groups
-1. **Require Functions** - Core task operations (add, complete, delete, view)
-2. **Input Functions** - Validated user input handlers
-3. **File Functions** - Persistent storage operations
-4. **Utility Functions** - Helper functions for task management
-
-## 📝 Notes
-
-- The application automatically loads your previous tasks on startup
-- All changes are saved automatically
-- Task lists are displayed in a clean, formatted manner
-- Input validation prevents errors from incorrect data entry
+- Completed and incomplete tasks are stored in Separte files
+- File handling is independant of the type of Operating System being used.
 
 ## 🛠 Requirements
 
@@ -85,5 +45,3 @@ README.md               # This documentation file
 - No external libraries required (uses only Python standard library)
 
 ---
-
-*This Task Manager helps you stay organized by keeping track of your pending and completed tasks in a simple, command-line interface.*
