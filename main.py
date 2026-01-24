@@ -18,9 +18,10 @@ def main():
             """)
         command_string = input().strip()
         
-        space_index = command_string.find(" ")
-        command_name = command_string[space_index].lower()
-        task_name = command_string[space_index:]
+        parts = command_string.split(" ", 1)
+        command_name = parts[0].lower()
+        task_name = parts[1] if len(parts) > 1 else ""
+
 
         
         if command_name == "add":
