@@ -16,7 +16,7 @@ def load_incomplete_tasks(incomplete_tasks):
     file_name = "incomplete_tasks.txt"
     file_path = os.path.join(sub_dir,file_name)
     check_create_task_file(file_path)
-    with open(file_name,"r") as f:
+    with open(file_path,"r") as f:
         for line in f:
             incomplete_tasks.append(line.strip())
 
@@ -36,7 +36,7 @@ def load_complete_tasks(completed_tasks):
     file_name = "completed_task.txt"
     file_path = os.path.join(sub_dir,file_name)
     check_create_task_file(file_path)
-    with open(file_path,"r"):
+    with open(file_path,"r") as f:
         for line in f:
             completed_tasks.append(line.strip())
 
