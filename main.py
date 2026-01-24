@@ -18,10 +18,10 @@ def main():
             """)
         command_string = input().strip()
         
-        # To seperate the command keyword and the task name
         space_index = command_string.find(" ")
         command_name = command_string[space_index].lower()
         task_name = command_string[space_index:]
+
         
         if command_name == "add":
             add_task(incomplete_tasks,task_name)
